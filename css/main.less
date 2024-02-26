@@ -1,0 +1,406 @@
+@import './fonts/fonts.css';
+/* vars */
+
+@primary-color:  #fc635e;
+@primary-block-grey: #f2f2f2;
+
+/* mixins */
+
+.mixin_font_default {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mixin_font_medium {
+    font-family: 'PF Encore Sans Pro';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.mixin_font_large {
+    font-family: 'PF Encore Sans Pro';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.mixin_font_bold {
+    font-family: 'PF Encore Sans Pro';
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    //  arrow-to-down
+    .arrowDown {
+        font-size: 30px;
+        text-decoration: none;
+        color: @primary-color;
+        border: 2px solid @primary-color;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        &:hover {
+            background: @primary-color;
+            color: white;
+        }
+    }
+
+    //  button
+    a.btn {
+        .mixin_font_medium;
+        color: @primary-color;
+        text-decoration: none;
+        font-size: 22px;
+        border: 2px solid @primary-color;
+        padding: 12px 28px;
+        border-radius: 8px;
+        &:hover {
+            background: @primary-color;
+            color: white;
+            transition: 0.3s;
+        }
+    }
+
+    // main text
+    header {
+        .mainText {
+            margin-top: -100px;
+        }
+        .arrowDown {
+            margin-top: 100px;
+            margin-bottom: 0;
+        }
+    }
+    .mainText {
+        text-align: center;
+       
+        h1, h2 {
+            .mixin_font_default;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 50px;
+            color: white;
+            span {
+                color: @primary-color;
+            }
+        }
+        h2 {
+            .mixin_font_bold;
+        }
+        p {
+            .mixin_font_default;
+            color: white;
+            margin: auto;
+            font-size: 22px;
+            margin-bottom: 45px;
+        }
+    }
+    .main_header {
+        .mixin_font_large;
+        display: inline-block;
+        font-size: 30px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #868686;
+        margin: 0 0 20px 0;
+        padding: 10px 0;
+        span {
+            color: @primary-color;
+        }
+    }
+
+    // body site
+    margin: 0 auto;
+    max-width: 1260px;
+
+    header {
+        background: url('../img/background.png') no-repeat;
+        display: flex;
+        flex-direction: column;
+        min-height: 830px;
+        width: 100%;
+        max-width: 1260px;
+        justify-content: space-around;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: -50px;
+            >a {
+                .mixin_font_default;
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+                img {
+                    padding-right: 15px;
+                    vertical-align: middle;
+                }
+            }
+            .logo:hover img {
+                opacity: .7;
+            }
+            menu {
+                list-style: none;
+                text-transform: uppercase;
+                display: flex;
+                li {
+                    padding-left: 15px;
+                    a {
+                        font-family: 'PF Encore Sans Pro Thin';
+                        font-weight: 100;
+                        font-style: normal;
+                        color: white;
+                        font-size: 20px;
+                        text-decoration: none;
+                        &:hover {
+                            color: @primary-color;
+                            border-bottom: 5px solid @primary-color;
+                            padding-bottom: 3px;
+                        }
+                    }
+                }
+               
+            }
+        }
+
+        }
+    
+    .recive {
+        margin-top:0;
+        margin-bottom: 50px;
+        text-align: center;
+        background: white;
+        padding: 0px 50px 10px 50px;
+        color: #868686;
+        >p {
+           .mixin_font_medium;
+            font-size: 22px;
+            max-width: 800px;
+            margin: 0px 20%;
+            margin-bottom: 50px;
+        }
+    }
+    .icons {
+        display: flex;
+        margin-bottom: 20px;
+        h4 {
+            .mixin_font_large;
+            text-transform: uppercase;
+        }
+        & .line_bottom {
+            margin: auto;
+            max-width: 60px;
+            border-bottom: 2px solid #868686;
+        }
+        p {
+            .mixin_font_medium;
+            font-size: 18px;
+        }
+        div {
+            padding: 15px;
+        }
+    }
+    .expand {
+        padding: 100px 150px 30px 150px;
+        background: url('../img/expand.png') no-repeat;
+        margin-bottom: 50px;
+        .mainText {
+            padding: 50px 0 100px;
+            margin-bottom: 60px;
+            border: 15px solid rgba(255,255,255,0.1);
+        }
+        }
+
+    .our_process .back_process {
+            min-height: 390px;
+            width: 100%;
+            background: url('../img/Our_proces(2).png');
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+    .wedo_1 {
+        padding: 100px 150px 30px 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background:  @primary-block-grey;
+        margin-bottom: 0;
+        
+         &>div {
+            display: flex;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        h4 {
+            .mixin_font_large;
+            text-transform: uppercase;
+            font-size: 20px;
+            border-left: 7px solid @primary-color;
+            padding-left: 7px;
+        }
+        p {
+            .mixin_font_medium;
+            font-size: 15px;
+            color: #9e9898;
+            padding-bottom: 30px;
+            line-height: 25px;
+        }
+        .left, .right {
+            width: 50%;
+        }
+        .right {
+            text-align: center;
+        }
+    }
+    .we_made {
+        background: white;
+        .right {
+            order: 0;
+            text-align: left;
+        }
+        .left {
+            order: 1;
+            text-align: right;
+            h4 {
+                font-size: 20px;
+                border:none;
+                border-right: 7px solid @primary-color;
+                padding-right: 7px;
+            }
+        }
+    }
+    .portfolio {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 0;
+        .btn {
+            margin: 40px 0;
+        }
+        .controls hr {
+            color: #adadad;
+        }
+        .controls {
+            margin-bottom: 30px;
+        }
+        .controls, .controls button {
+            padding: 10px 50px 10px 50px;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+        .controls button {
+            .mixin_font_medium;
+            color: @primary-color;
+            background: transparent;
+            border: none; 
+            text-transform: uppercase; 
+            &:hover {
+                color: #e44640;
+                font-weight: bold;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            
+        }
+        .container-filter {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            #ex1 {
+                background-image: url('../img/portfolio/1.png');
+            }
+            #ex2 {
+                background-image: url('../img/portfolio/2.png');
+            }
+            #ex3 {
+                background-image: url('../img/portfolio/3.png');
+            }
+            #ex4 {
+                background-image: url('../img/portfolio/4.png');
+            }
+            #ex5 {
+                background-image: url('../img/portfolio/5.png');
+            }
+            #ex6 {
+                background-image: url('../img/portfolio/6.png');
+            }
+            div {
+                background-size: cover;
+                background-position: center center;
+                margin: 10px;
+                width: 250px;
+                height: 180px;
+                .fil {
+                    p {
+                        .mixin_font_bold;
+                        margin: 0;
+                        padding: 10px;
+                        
+                    }
+                    display: none;
+                    font-size: 20px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    position: relative;
+                    margin: 0;
+                    background: url('../img/portfolio/plus.png') rgba(255, 72, 72, 0.75);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &:hover .fil {
+                        display: block;
+                        cursor: pointer;
+
+                    }
+            }  
+        }
+    }
+    .our_team {
+        background:  @primary-block-grey; 
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;        
+        .recive {
+            background:  @primary-block-grey;
+            .man {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+                .contacts {
+                    margin: 50px 20px;
+                    min-width: 200px;
+                    .main_header {
+                        .mixin_font_large;
+                        display: block;
+                        text-transform: capitalize;
+                        font-size: 25px;
+                        font-weight: bold;
+                        border: none;
+                        margin-top: 10px;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        .mixin_font_medium;
+                        margin-top: 0;
+                    }
+                    .fa-stack {
+                        font-size: 20px;
+                        color: #565656;
+                    }
+                    .fa-stack:hover {
+                        color: @primary-color;
+                    }
+                }
+                }
+            }
+        }
+    } 
+   
+    

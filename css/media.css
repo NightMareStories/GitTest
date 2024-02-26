@@ -1,0 +1,138 @@
+@media screen and (max-width: 768px) and (min-width: 550px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    body .expand {
+        padding: 30px 30px 10px 30px;
+    }
+    body .expand .mainText {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    body .expand .mainText h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    nav {
+        padding: 0px 20px;
+    }
+    menu{
+        display: flex;
+        flex-direction: column;
+    }
+    menu li {
+        margin-bottom: 10px;
+    }
+    body header .mainText h1 {
+        font-size: 40px;
+        margin-top: -20px
+    }
+    body header .mainText p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    body .expand {
+        padding: 10px;
+    }
+    body .expand .mainText {
+        padding: 30px 0;
+        margin-bottom: 0;
+        border: none;
+    }
+    body .expand .mainText h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    body .wedo_1>div .left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .recive {
+        padding: 30px 20px;
+    }
+    .recive h3 {
+        font-size: 26px;
+    }
+    .recive p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons div {
+        max-width: 350px;
+    }
+    .icons div p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 946px) {
+    body .expand .mainText {
+        padding: 0 0 50px 0;
+    }
+    body .wedo_1 {
+        padding: 30px;
+    }
+    body .wedo_1>div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+        
+    }
+    body .wedo_1>div .right {
+        width: auto;
+        order:1;
+    }
+    body .wedo_1>div img {
+        width: 100%;
+    }
+    body .wedo_1>div .left {
+        text-align: center;
+        margin: 0 20%;
+        order: 0;
+    }
+    body .wedo_1 .left h4, .we_made .left h4 {
+        border: none;
+        border-bottom: 4px solid #fc635e;
+        padding: 0px 0 2px 0;
+        display: inline;
+    }
+    body .wedo_1>div p {
+        padding-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+    body .our_process {
+        padding: 0;
+    }
+    body .portfolio .controls button {
+        padding: 5px 5px;
+    }
+    body .portfolio .recive {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body header .arrowDown {
+        margin-top: 0;
+    }
+    body .our_process .back_process {
+        min-height: 290px;
+    }
+    body .portfolio .controls span {
+        display: none;
+    }
+}

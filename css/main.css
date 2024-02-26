@@ -1,0 +1,402 @@
+@import 'fonts/fonts.css';
+/* vars */
+/* mixins */
+.mixin_font_default {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mixin_font_medium {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+}
+.mixin_font_large {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 500;
+  font-style: normal;
+}
+.mixin_font_bold {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  margin: 0 auto;
+  max-width: 1260px;
+}
+body .arrowDown {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fc635e;
+  border: 2px solid #fc635e;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+body .arrowDown:hover {
+  background: #fc635e;
+  color: white;
+}
+body a.btn {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  color: #fc635e;
+  text-decoration: none;
+  font-size: 22px;
+  border: 2px solid #fc635e;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+body a.btn:hover {
+  background: #fc635e;
+  color: white;
+  transition: 0.3s;
+}
+body header .mainText {
+  margin-top: -100px;
+}
+body header .arrowDown {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+body .mainText {
+  text-align: center;
+}
+body .mainText h1,
+body .mainText h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+}
+body .mainText h1 span,
+body .mainText h2 span {
+  color: #fc635e;
+}
+body .mainText h2 {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 800;
+  font-style: normal;
+}
+body .mainText p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 45px;
+}
+body .main_header {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #868686;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+}
+body .main_header span {
+  color: #fc635e;
+}
+body header {
+  background: url('../img/background.png') no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 830px;
+  width: 100%;
+  max-width: 1260px;
+  justify-content: space-around;
+}
+body header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -50px;
+}
+body header nav > a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+body header nav > a img {
+  padding-right: 15px;
+  vertical-align: middle;
+}
+body header nav .logo:hover img {
+  opacity: .7;
+}
+body header nav menu {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+}
+body header nav menu li {
+  padding-left: 15px;
+}
+body header nav menu li a {
+  font-family: 'PF Encore Sans Pro Thin';
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+body header nav menu li a:hover {
+  color: #fc635e;
+  border-bottom: 5px solid #fc635e;
+  padding-bottom: 3px;
+}
+body .recive {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  background: white;
+  padding: 0px 50px 10px 50px;
+  color: #868686;
+}
+body .recive > p {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+  max-width: 800px;
+  margin: 0px 20%;
+  margin-bottom: 50px;
+}
+body .icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+body .icons h4 {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+body .icons .line_bottom {
+  margin: auto;
+  max-width: 60px;
+  border-bottom: 2px solid #868686;
+}
+body .icons p {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+body .icons div {
+  padding: 15px;
+}
+body .expand {
+  padding: 100px 150px 30px 150px;
+  background: url('../img/expand.png') no-repeat;
+  margin-bottom: 50px;
+}
+body .expand .mainText {
+  padding: 50px 0 100px;
+  margin-bottom: 60px;
+  border: 15px solid rgba(255, 255, 255, 0.1);
+}
+body .our_process .back_process {
+  min-height: 390px;
+  width: 100%;
+}
+body .our_process .back_process img {
+  width: 100%;
+  height: auto;
+}
+body .wedo_1 {
+  padding: 100px 150px 30px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f2f2;
+  margin-bottom: 0;
+}
+body .wedo_1 > div {
+  display: flex;
+  text-align: left;
+  margin-bottom: 30px;
+}
+body .wedo_1 h4 {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-left: 7px solid #fc635e;
+  padding-left: 7px;
+}
+body .wedo_1 p {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: #9e9898;
+  padding-bottom: 30px;
+  line-height: 25px;
+}
+body .wedo_1 .left,
+body .wedo_1 .right {
+  width: 50%;
+}
+body .wedo_1 .right {
+  text-align: center;
+}
+body .we_made {
+  background: white;
+}
+body .we_made .right {
+  order: 0;
+  text-align: left;
+}
+body .we_made .left {
+  order: 1;
+  text-align: right;
+}
+body .we_made .left h4 {
+  font-size: 20px;
+  border: none;
+  border-right: 7px solid #fc635e;
+  padding-right: 7px;
+}
+body .portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+}
+body .portfolio .btn {
+  margin: 40px 0;
+}
+body .portfolio .controls hr {
+  color: #adadad;
+}
+body .portfolio .controls {
+  margin-bottom: 30px;
+}
+body .portfolio .controls,
+body .portfolio .controls button {
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+body .portfolio .controls button {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  color: #fc635e;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+body .portfolio .controls button:hover {
+  color: #e44640;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body .portfolio .container-filter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .portfolio .container-filter #ex1 {
+  background-image: url('../img/portfolio/1.png');
+}
+body .portfolio .container-filter #ex2 {
+  background-image: url('../img/portfolio/2.png');
+}
+body .portfolio .container-filter #ex3 {
+  background-image: url('../img/portfolio/3.png');
+}
+body .portfolio .container-filter #ex4 {
+  background-image: url('../img/portfolio/4.png');
+}
+body .portfolio .container-filter #ex5 {
+  background-image: url('../img/portfolio/5.png');
+}
+body .portfolio .container-filter #ex6 {
+  background-image: url('../img/portfolio/6.png');
+}
+body .portfolio .container-filter div {
+  background-size: cover;
+  background-position: center center;
+  margin: 10px;
+  width: 250px;
+  height: 180px;
+}
+body .portfolio .container-filter div .fil {
+  display: none;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  background: url('../img/portfolio/plus.png') rgba(255, 72, 72, 0.75);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .portfolio .container-filter div .fil p {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 800;
+  font-style: normal;
+  margin: 0;
+  padding: 10px;
+}
+body .portfolio .container-filter div:hover .fil {
+  display: block;
+  cursor: pointer;
+}
+body .our_team {
+  background: #f2f2f2;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+}
+body .our_team .recive {
+  background: #f2f2f2;
+}
+body .our_team .recive .man {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body .our_team .recive .man .contacts {
+  margin: 50px 20px;
+  min-width: 200px;
+}
+body .our_team .recive .man .contacts .main_header {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 500;
+  font-style: normal;
+  display: block;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+body .our_team .recive .man .contacts p {
+  font-family: 'PF Encore Sans Pro';
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0;
+}
+body .our_team .recive .man .contacts .fa-stack {
+  font-size: 20px;
+  color: #565656;
+}
+body .our_team .recive .man .contacts .fa-stack:hover {
+  color: #fc635e;
+}
